@@ -269,6 +269,13 @@ require('lazy').setup({
       },
     },
   },
+  {
+    "glebzlat/arduino-nvim",
+    config = {
+      function() require("arduino-nvim").setup() end,
+      filetype = "arduino",
+    }
+  },
 
   -- NOTE: Plugins can also be configured to run Lua code when they are loaded.
   --
